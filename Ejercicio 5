@@ -1,1 +1,14 @@
+# Leer dos números y mostrar todos los números terminados en 4 comprendidos entre ellos.
 
+numero1 = int(input("Ingrese el primer número: "))
+numero2 = int(input("Ingrese el segundo número: "))
+
+if numero1 > numero2:
+    numero1, numero2 = numero2, numero1
+
+
+print("Números que terminan en 4 entre", numero1, "y", numero2, ":")
+
+for i in range(numero1 + 1, numero2):
+    if i % 10 == 4:
+        print(i)

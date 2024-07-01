@@ -1,0 +1,9 @@
+# Leer un número entero de tres dígitos y mostrar todos los enteros comprendidos entre 1 y cada uno de los dígitos. 
+
+numero= int(input( "Ingrese un numero de tres digitos: "))
+if numero > 99 and numero < 1000:
+  digito1= numero // 100
+  digito2= (numero % 100) // 10
+  digito3= numero % 10
+  for i in range(1, digito1+1):
+    print(i)

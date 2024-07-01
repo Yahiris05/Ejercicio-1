@@ -1,0 +1,10 @@
+#Leer un número entero y mostrar todos los pares comprendidos entre 1 y el número leído.
+
+numero = int(input("Ingrese un número entero: "))
+if numero > 1:
+  i = 2
+  while i <= numero:
+    print(i)
+    i += 2
+else: 
+  print("El número debe ser mayor a 1")

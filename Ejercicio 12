@@ -1,0 +1,11 @@
+# Leer un número entero de 3 dígitos y determinar si tiene el dígito 1.
+
+numero = int(input("Ingrese un número entero de tres dígitos: "))
+
+tiene_digito_1 = '1' in str(numero)
+
+if tiene_digito_1:
+    print(f"El número {numero} contiene el dígito 1.")
+else:
+    print(f"El número {numero} no contiene el dígito 1.")
+

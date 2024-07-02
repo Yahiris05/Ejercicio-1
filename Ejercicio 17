@@ -1,0 +1,18 @@
+# Leer números hasta que digiten 0 y determinar a cuánto es igual el promedio de los números terminados en 5
+
+suma = 0
+conteo = 0
+
+while True:
+    numero = int(input("Ingrese un número (0 para que termine): "))
+    if numero == 0:
+        break
+    if numero % 10 == 5:  
+        suma += numero
+        conteo += 1
+
+if conteo > 0:
+    promedio = suma / conteo
+    print(f"El promedio de los números terminados en 5 es {promedio}.")
+else:
+    print("No se ingresaron números terminados en 5.")

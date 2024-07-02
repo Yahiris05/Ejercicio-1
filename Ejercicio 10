@@ -1,12 +1,9 @@
-# Leer un número entero
-numero = int(input("Ingrese un número entero: "))
+#Leer un número entero y calcular a cuánto es igual la sumatoria de todas las factoriales de los números comprendidos entre 1 y el número leído.
 
-# Inicializar la variable para la suma
+numero = int(input("Ingrese un número entero: "))
 suma = 0
 
-# Usar un bucle for para sumar todos los números desde 1 hasta el número ingresado
+
 for i in range(1, numero + 1):
     suma += i
-
-# Mostrar el resultado
 print(f"La suma de todos los enteros comprendidos entre 1 y {numero} es {suma}.")

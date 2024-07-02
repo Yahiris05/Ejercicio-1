@@ -1,0 +1,6 @@
+#Leer un entero y mostrar todos los múltiplos de 5 comprendidos entre 1 y el número leído
+
+numero = int(input("Ingrese un número entero: "))
+print(f"Múltiplos de 5 entre 1 y {numero}:")
+for i in range(5, numero + 1, 5):
+    print(i)

@@ -1,0 +1,12 @@
+#Leer un número entero de dos dígitos y mostrar en pantalla todos los enteros comprendidos entre un dígito y otro.
+
+numero = int(input("Ingrese un número entero de dos dígitos: "))
+digito1 = numero // 10  # Dígito de las decenas
+digito2 = numero % 10   # Dígito de las unidades
+
+if digito1 > digito2:
+    digito1, digito2 = digito2, digito1
+
+print(f"Enteros comprendidos entre {digito1} y {digito2}:")
+for i in range(digito1 + 1, digito2):
+    print(i)
